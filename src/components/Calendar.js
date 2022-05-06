@@ -47,8 +47,7 @@ const Calendar = () => {
     }
     const handleSubmit = e => {
         e.preventDefault();
-        if(firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' ||
-        bookingHours.trim() === '' || bookingHours === undefined){
+        if(firstName.trim() === '' || lastName.trim() === '' || email.trim() === '' || bookingHours === undefined){
             const alert = {
                 msg: 'Debe completar todos los campos',
                 classes: 'alerta-error'
