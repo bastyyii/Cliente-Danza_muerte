@@ -71,7 +71,6 @@ const Calendar = () => {
             email: '',
             bookingHours: 'undefined'
         });
-        dispatch(getReservations(month, day, year));
     }
     
     return ( 
