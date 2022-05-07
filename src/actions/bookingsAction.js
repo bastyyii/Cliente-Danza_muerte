@@ -32,6 +32,7 @@ export function createReservations(month, day, year, data){
         try {
             const get = await clientAxios.post(`/api/appointment/create/${month}/${day}/${year}`, data);
             dispatch(successGettingReservations(get.data.reserv));
+            await dispatch(getReservations(month, day, year));
         } catch (error) {
             const alert = {
                 msg: error.response.data.msg,
